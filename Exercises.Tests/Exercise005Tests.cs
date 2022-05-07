@@ -65,5 +65,10 @@ namespace Exercises.Tests
         {
             Exercise005.IsPangram("the 1 quick brown fox jumps over the 2 lazy dogs").Should().Be(true);
         }
+        [Test]
+        public void IsPangram_Should_Return_True_For_Pangram_With_Special_Character()
+        {
+            Exercise005.IsPangram("the @ quick brown fox jumps over the ! lazy dogs");
+        }
     }
 }
